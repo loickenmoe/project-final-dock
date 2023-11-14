@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8719ee;
+}
+.calculatrice {
+    width: 22.3rem;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #312e3b;
+    box-shadow: 0 3px 15px rgba(113, 115, 119, 0.5);
+}
+#heure{
+    width: 25%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #539253;
+}
+input {
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    margin: 15px 0;
+    background: transparent;
+    font-size: 45px;
+    box-shadow: 0 3px 15px #5454544d;
+    text-align: right;
+    color: #000;
+    border-radius: 5px;
+    background-color: #f5deb3;
+    outline: none;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 25px;
+    color: #f5deb3;
+    border: 0;
+    background-color: #2d2a37;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px rgba(239, 240, 245, 0.9);
+    cursor: pointer;
+}
+
+.egaleBtn, .operateur {
+    color: #11ee11;
+}
+.fct {
+    color: blueviolet;
+}

@@ -1,0 +1,105 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #675afe;
+  }
+
+  /*styliser le conteneur*/
+  .container {
+      width: 350px;
+      padding: 20px;
+      border-radius: 6px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  input {
+      padding: 12px;
+      outline: 0;
+      margin-top: 5px;
+      margin-bottom: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+  }
+
+  /* personnaliser le bouton d'envoie */
+  input[type="submit"] {
+      background-color: #675afe;
+      color: #fff;
+      border: 1px solid #675afe;
+  }
+
+  input[type="submit"]:hover {
+      cursor: pointer;
+  }
+
+  /* personnaliser le message */
+  #message {
+      width: 350px;
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      color: black;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      margin-top: 10px;
+      padding: 20px;
+      animation: anime 0.5s ease-out;
+  }
+
+  /* animation  message*/
+  @keyframes anime {
+      from {
+          transform: translateY(100px);
+      }
+  }
+
+  h3 {
+      font-size: 16px;
+      font-weight: 400;
+  }
+
+  #message p {
+      font-size: 15px;
+      margin-left: 7px;
+      padding: 7px 0;
+  }
+
+  /* lorsque les exigences sont erronees */
+  .invalid {
+      color: red;
+  }
+
+  .invalid::before {
+      content: "✕";
+      position: relative;
+      left: -7px;
+  }
+
+  /* lorsque les exigences sont respectées */
+  .valid {
+      color: green;
+  }
+
+  .valid::before {
+      content: "✓";
+      position: relative;
+      left: -7px;
+  }

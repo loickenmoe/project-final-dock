@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loic</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/183b574aee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box">
+        <!-- box1 -->
+        <div class="box1">
+            <a href="https://kfokam48.org/" target="_blank" id="logo"><img src="./logo.png" alt="logo"></a>
+            <div class="liens">
+                <div class="navigationBtn" id="home" onclick="loic('home')" href="./index2.html"> <i
+                        class="fa-solid fa-house"></i> Home </div>
+                <div class="navigationBtn" onclick="loic('1')" href="./projets/projet1/index.html"> <i
+                        class="fa-regular fa-clock"></i> Chronomètre</div>
+                <div class="navigationBtn" onclick="loic('2')" href="#"> <i class="fa-solid fa-list-ul"></i> To Do List
+                </div>
+                <div class="navigationBtn" onclick="loic('3')" href="#"> <i class="fa-solid fa-person-running"></i> Jeux
+                    de saut</div>
+                <div class="navigationBtn" onclick="loic('4')" href="#"> <i class="fa-solid fa-scissors"></i> Jeux
+                    Pierre-Papier-Ciseaux</div>
+                <div class="navigationBtn" onclick="loic('5')" href="#"> <i class="fa-solid fa-key"></i> Vérification de
+                    mot de passe</div>
+                <div class="navigationBtn" onclick="loic('6')" href="#"> <i class="fa-solid fa-brain"></i> jeu de calcul
+                </div>
+                <div class="navigationBtn" onclick="loic('7')" href="#"> <i class="fa-solid fa-barcode"></i> Générateur
+                    de code-barres</div>
+                <div class="navigationBtn" onclick="loic('8')" href="#"> <i class="fa-solid fa-keyboard"></i> Générateur
+                    de mot de passe</div>
+                <div class="navigationBtn" onclick="loic('9')" href="#"> <i class="fa-solid fa-link"></i> Raccourcisseur
+                    de lien</div>
+                <div class="navigationBtn" onclick="loic('10')" href="#"> <i class="fa-solid fa-tags"></i> Créer des
+                    Onglets</div>
+                <div class="navigationBtn" onclick="loic('11')" href="#"> <i class="fa-solid fa-calculator"></i>
+                    Calculatrice</div>
+            </div>
+        </div>
+        <!-- box2 -->
+        <div class="box2">
+            <div id="respo">
+                <button id="respoBtn" onclick="affichage()">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="https://pkfinstitute.com/" target="_blank"><img src="./logo.png" alt="logo"></a>
+            </div>
+            <!-- box 2a -->
+            <div class="box2a">
+                <p>Projet final | DOCK</p>
+                <p class="entete">Loïc KENMOE <img src="./image.jpg" alt="icon" class="icon"></p>
+            </div>
+
+            <!-- box 2b -->
+            <div>
+                <div class="box2b" id="box2b">
+                    <div class="box2b1">
+                        <a href="./image.jpg" class="link_photo" target="_blank">
+                            <img src="./image.jpg" alt="icon" class="icon" id="photo">
+                            <div class="photo_hover">Voir la photo</div>
+                        </a>
+
+                        <p>KENMOE MBEUKEM Loïc Luc </p>
+                    </div>
+                    <div class="box2b2">
+                        <div>
+                            <label for="text"><i class="fa-solid fa-text-width"></i> Nom Complet</label>
+                            <input type="text" placeholder="KENMOE MBEUKEM Loïc Luc">
+                        </div>
+                        <div>
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input type="email" name="email" id="email" placeholder="loickenmoe1@gmail.com">
+                        </div>
+                        <div>
+                            <label for="number"><i class="fa-solid fa-phone-volume"></i> Telephone</label>
+                            <input type="tel" name="nomber" id="number" placeholder="+237 655 526 896">
+                        </div>
+                        <div>
+                            <label for="adresse"><i class="fa-solid fa-location-dot"></i> Adresse</label>
+                            <input type="text" id="adresse" placeholder=" Adresse, Ville, 12345, Pays">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box2b" id="projets"></div>
+
+            <!-- box 2c -->
+            <div class="box2c">
+                <span class="span1">2023 <a href="https://kfokam48.org/" target="_blank">©KFOKAM48</a> -KENMOE .MB Loïc
+                    Luc </span>
+                <span class="span2">
+                    <a href="https://www.freecodecamp.org/certification/loickenmoe/responsive-web-design"
+                        target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    <a href="https://github.com/loickenmoe?tab=repositories" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lo%C3%AFc-kenmoe-aaa56b297/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></i></a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
